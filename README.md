@@ -16,6 +16,7 @@
 
 ## Данные для проекта Firebase
 ID:  gdg-iot-demo-app
+Firebase host: gdg-iot-demo-app.firebaseio.com
 
 ## Распиновка NodeMCU
 ![NodeMCU](https://raw.githubusercontent.com/nodemcu/nodemcu-devkit-v1.0/master/Documents/NODEMCU_DEVKIT_V1.0_PINMAP.png)
