@@ -16,7 +16,13 @@
 
 ## Данные для проекта Firebase
 ID:  gdg-iot-demo-app
-Firebase host: gdg-iot-demo-app.firebaseio.com
+
+```C
+#define FIREBASE_HOST "gdg-iot-demo-app.firebaseio.com"
+#define FIREBASE_AUTH "ut8LWhCawBW8tE7nTARkBZHbudcGcU1GPQtVxbB-"
+#define WIFI_SSID "SSID"
+#define WIFI_PASSWORD "KEY"
+```
 
 ## Распиновка NodeMCU
 ![NodeMCU](https://raw.githubusercontent.com/nodemcu/nodemcu-devkit-v1.0/master/Documents/NODEMCU_DEVKIT_V1.0_PINMAP.png)
