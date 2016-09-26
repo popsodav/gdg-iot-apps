@@ -14,6 +14,9 @@
 * Adafruit DHT Unified: https://github.com/adafruit/Adafruit_DHT_Unified (можно установить через Library manager)
 * Firebase Arduino: https://github.com/googlesamples/firebase-arduino
 
+## Данные для проекта Firebase
+ID:  gdg-iot-demo-app
+
 ## Распиновка NodeMCU
 ![NodeMCU](https://raw.githubusercontent.com/nodemcu/nodemcu-devkit-v1.0/master/Documents/NODEMCU_DEVKIT_V1.0_PINMAP.png)
 
