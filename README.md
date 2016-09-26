@@ -11,8 +11,9 @@
 ## Необходимые библиотеки
 * Adafruit Sensor: https://github.com/adafruit/Adafruit_Sensor
 * Adafruit DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library
-* Adafruit DHT Unified: https://github.com/adafruit/Adafruit_DHT_Unified (можно установить через Library manager)
+* Adafruit DHT Unified: https://github.com/adafruit/Adafruit_DHT_Unified (можно установить через Library Manager)
 * Firebase Arduino: https://github.com/googlesamples/firebase-arduino
+* ArduinoJSON: https://github.com/bblanchon/ArduinoJson (можно установить через Library Manager)
 
 ## Данные для проекта Firebase
 ID:  gdg-iot-demo-app
