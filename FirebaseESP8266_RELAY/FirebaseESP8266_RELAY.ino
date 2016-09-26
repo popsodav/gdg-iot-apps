@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 
 #define FIREBASE_HOST "gdg-iot-demo-app.firebaseio.com"
-#define WIFI_SSID "MERA-BELKIN"
-#define WIFI_PASSWORD "Mayak4!5WeMo"
+#define WIFI_SSID "*"
+#define WIFI_PASSWORD "*"
 
 #define RELAY_PIN 5
 bool pinState = false;
