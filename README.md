@@ -16,3 +16,6 @@
 
 ## Распиновка NodeMCU
 ![NodeMCU](https://raw.githubusercontent.com/nodemcu/nodemcu-devkit-v1.0/master/Documents/NODEMCU_DEVKIT_V1.0_PINMAP.png)
+
+## Подключение датчика DHT11
+![NodeMCUDHT](http://www.seeedstudio.com/recipe/img/recipe/2015-05/5555de22a4b2a.jpg)
