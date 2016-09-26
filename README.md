@@ -10,6 +10,7 @@
 
 ## Необходимые библиотеки
 * Adafruit Sensor: https://github.com/adafruit/Adafruit_Sensor
+* Adafruit DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library
 * Adafruit DHT Unified: https://github.com/adafruit/Adafruit_DHT_Unified (можно установить через Library manager)
 * Firebase Arduino: https://github.com/googlesamples/firebase-arduino
 
