@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 
 #define FIREBASE_HOST "gdg-iot-demo-app.firebaseio.com"
-#define WIFI_SSID "MERA-BELKIN"
-#define WIFI_PASSWORD "Mayak4!5WeMo"
+#define WIFI_SSID "AndroidAP"
+#define WIFI_PASSWORD "q1w2e3r4"
 
 #define RELAY_PIN 5
 bool pinState = false;
@@ -52,9 +52,5 @@ void loop() {
     }
   }
 
-  if (pinState) {
-    digitalWrite(RELAY_PIN, HIGH);
-  } else {
-    digitalWrite(RELAY_PIN, LOW);
-  }
+  digitalWrite(RELAY_PIN, !pinState);
 }
