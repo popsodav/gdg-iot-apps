@@ -33,3 +33,13 @@ ID:  gdg-iot-demo-app
 
 ## Подключение реле
 ![NodeMCIRelay](https://raw.githubusercontent.com/popsodav/gdg-iot-apps/master/FirebaseESP8266_RELAY/relay.png)
+
+## Firebase Hosting
+1. Установите Node.JS
+2. Установите firebase-tools: 
+npm install -g firebase-tools
+3. Перейдите в каталог с веб приложением
+4. Введите команду:
+firebase serve
+5. Ваше приложение будет доступно по адресу: 
+http://localhost:5000
