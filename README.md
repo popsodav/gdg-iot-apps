@@ -43,3 +43,6 @@ npm install -g firebase-tools
 firebase serve
 5. Ваше приложение будет доступно по адресу: 
 http://localhost:5000
+
+##Драйвер
+http://www.winchiphead.com/download/CH341/CH341SER.ZIP
