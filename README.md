@@ -30,3 +30,6 @@ ID:  gdg-iot-demo-app
 
 ## Подключение датчика DHT11
 ![NodeMCUDHT](http://www.seeedstudio.com/recipe/img/recipe/2015-05/5555de22a4b2a.jpg)
+
+## Подключение реле
+![NodeMCIRelay](https://raw.githubusercontent.com/popsodav/gdg-iot-apps/master/FirebaseESP8266_RELAY/relay.png)
