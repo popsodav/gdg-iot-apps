@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Firebase Hosting</title>
+    <style media="screen">
+      body {
+        font-family: Roboto, Arial, sans-serif;
+        background: #ECEFF1;
+        color: rgba(0,0,0,0.87);
+      }
+
+      a {
+        color: rgb(3,155,229);
+      }
+
+      #message {
+        max-width: 400px;
+        margin: 40px auto;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+        border-radius: 2px;
+        background: white;
+        padding: 16px 24px;
+      }
+
+      #message h1 {
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 0 16px;
+      }
+
+      #message p {
+        font-weight: 300;
+        line-height: 150%;
+      }
+
+      #message ul {
+        list-style: none;
+        margin: 16px 0 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      #message li a {
+        display: inline-block;
+        padding: 8px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        background: rgb(3,155,229);
+        color: white;
+        border: 1px solid rgb(3,155,229);
+        border-radius: 3px;
+        font-size: 14px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+      }
+    </style>
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+	<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyD60m4oVG6mPZseWh5cF4anA-rou1dEdNA",
+		authDomain: "gdg-iot-demo-app.firebaseapp.com",
+		databaseURL: "https://gdg-iot-demo-app.firebaseio.com",
+		storageBucket: "gdg-iot-demo-app.appspot.com",
+		messagingSenderId: "412980594543"
+	  };
+	  firebase.initializeApp(config);
+	  
+	  var database = firebase.database();
+	  
+	  database.ref('sensors').on('child_changed', function(data) {
+		var content = "<h2>" + data.key + ": </h2>";
+		content += "<p>Temperature: " + data.val().temperature + " &#8451;</p>";
+		content += "<p>Humidity: " + data.val().humidity + " %</p>";
+		var div = $("div").find("[data-sensor='" + data.key + "']")[0];
+		if(div === undefined) {
+			$('#data').append("<div data-sensor='" + data.key + "'>" + content + "</div>");
+		} else {
+			$(div).html(content);
+		}
+	});
+	
+	</script>
+
+  </head>
+  <body>
+    <div id="data">
+      
+    </div>
+  </body>
+</html>
